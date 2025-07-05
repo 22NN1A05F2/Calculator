@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.3">
+        <title>Resume</title>
+    </head>
+    <body>
+        <h1>RESUME</h1>
+        <form method="POST" action="">
+        <!-- Django requires this for security -->
+        {% csrf_token %}
+        <label for="first_name">Enter Name:</label>
+        <input type="text" id="first_name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="surname">Enter Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname" required><br><br>
+
+        <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
